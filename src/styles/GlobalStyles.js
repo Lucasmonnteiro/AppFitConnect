@@ -2,14 +2,14 @@
 import { StyleSheet } from 'react-native';
 
 export const COLORS = {
-  primary: '#1E90FF',    // azul principal
-  primaryDark: '#1570d6',
-  secondary: '#87CEFA',  // azul claro
-  background: '#F2F2F6',
-  card: '#FFFFFF',
-  text: '#222222',
-  muted: '#666666',
-  danger: '#FF4D4F',
+  primary: '#00c896',     // verde principal (vibrante e saudável)
+  primaryDark: '#009b74', // verde escuro (profundidade)
+  secondary: '#a8edea',   // verde-claro/pastel (suavidade)
+  background: '#f4fff9',  // fundo branco-esverdeado
+  card: '#ffffff',        // branco puro para contraste
+  text: '#1f4037',        // verde escuro (legibilidade)
+  muted: '#5f7c73',       // verde acinzentado (texto secundário)
+  danger: '#ff4d4f',      // vermelho de alerta
 };
 
 export const GlobalStyles = StyleSheet.create({
@@ -30,7 +30,7 @@ export const GlobalStyles = StyleSheet.create({
   title: {
     fontSize: 26,
     fontWeight: '700',
-    color: COLORS.primary,
+    color: COLORS.primaryDark,
   },
   subtitle: {
     fontSize: 14,
@@ -45,7 +45,7 @@ export const GlobalStyles = StyleSheet.create({
     paddingHorizontal: 14,
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#E6E9EE',
+    borderColor: '#d8f3e3', // leve borda esverdeada
     marginBottom: 12,
   },
 
@@ -80,13 +80,13 @@ export const GlobalStyles = StyleSheet.create({
   // card básico
   card: {
     backgroundColor: COLORS.card,
-    borderRadius: 12,
-    padding: 14,
+    borderRadius: 14,
+    padding: 16,
     shadowColor: '#000',
-    shadowOpacity: 0.03,
+    shadowOpacity: 0.05,
     shadowRadius: 6,
-    elevation: 2,
-    marginBottom: 12,
+    elevation: 3,
+    marginBottom: 14,
   },
 
   // utilitários
